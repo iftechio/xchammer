@@ -274,8 +274,8 @@ def xchammer_dependencies():
     # into a workspace as a binary build
     new_git_repository(
         name = "xchammer_tulsi_aspects",
-        remote = "https://github.com/pinterest/tulsi.git",
-        commit = "d9f7da58ff7a620e64d695baa2179c3598333bf7",
+        remote="https://github.com/bazelbuild/tulsi",
+        commit="00a73c99bac2d96c0e168fb6397089dc39e8eb9a",
         strip_prefix="src/TulsiGenerator/Bazel",
         build_file_content="exports_files(['tulsi'])"
     )
